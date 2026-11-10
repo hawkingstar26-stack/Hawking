@@ -11,6 +11,9 @@
 .tile img{object-fit:cover;background:transparent}
 .hero-carousel img{object-fit:cover;background:transparent}.hero-carousel{isolation:isolate}.hero-carousel img{transition:opacity .45s,transform 1.2s}.carousel-prev,.carousel-next{position:absolute;z-index:3;bottom:18px;width:36px;height:36px;border:1px solid #fff8;border-radius:50%;background:#08080899;color:#fff;cursor:pointer}.carousel-prev{right:66px}.carousel-next{right:22px}.carousel-dots{position:absolute;z-index:3;left:23px;bottom:24px;display:flex;gap:7px}.carousel-dot{width:24px;height:2px;border:0;padding:0;background:#ffffff66;cursor:pointer}.carousel-dot.active{background:var(--hot)}
 /* Hawking editorial redesign */
+/* Mobile: keep homepage clear; use the main works grid below */
+@media(max-width:680px){.editorial-series{display:none!important}}
+
 /* Prevent portfolio media from escaping the mobile hero */
 @media(max-width:680px){.hero{isolation:isolate!important;overflow:hidden!important;contain:paint!important}.hero-media{overflow:hidden!important;clip-path:inset(0)!important}.hero-media img{position:absolute!important;inset:0!important}.hero+section,.hero~section{position:relative!important;clear:both!important;z-index:4!important;transform:none!important}.works,.editorial-series,.about,.contact{overflow:hidden!important;contain:layout paint!important}.gallery,.video-grid,.series-list{position:relative!important;z-index:1!important}.tile,.video-card,.series-image{position:relative!important;transform:none!important}.series-image img,.tile img,.video-card img{position:relative!important;inset:auto!important}.editorial-series{margin-top:0!important}.about-stamp,.about-stats{position:relative!important;z-index:1!important}}
 
