@@ -1,11 +1,11 @@
 {
   "items": [
     {
-      "kind": "摄影",
-      "category": "人像 ",
       "title": "黑傣人像摄影",
+      "kind": "摄影",
+      "category": "人像",
       "cover": "/assets/uploads/dsc07607.jpg",
-      "meta": "2026年 西双版纳 "
+      "meta": "西双版纳 2026年"
     }
   ]
 }
