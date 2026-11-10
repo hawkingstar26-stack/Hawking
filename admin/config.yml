@@ -1,0 +1,38 @@
+backend:
+  name: turbo-github
+  turbo_site_id: 451e8998-2c24-4b3e-9ba7-402453fb0050
+  branch: main
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+locale: zh_Hans
+site_url: https://clever-gumption-084784.netlify.app
+collections:
+  - name: "site"
+    label: "网站设置"
+    files:
+      - name: "settings"
+        label: "基本信息"
+        file: "content/site.json"
+        fields:
+          - {label: "网站名称", name: "siteName", widget: "string"}
+          - {label: "联系邮箱", name: "email", widget: "string"}
+          - {label: "首屏标题第一行", name: "heroLine1", widget: "string"}
+          - {label: "首屏标题第二行", name: "heroLine2", widget: "string"}
+          - {label: "关于我", name: "about", widget: "text"}
+  - name: "projects"
+    label: "作品项目"
+    files:
+      - name: "all-projects"
+        label: "摄影与视频项目"
+        file: "content/projects.json"
+        fields:
+          - label: "项目列表"
+            name: "items"
+            widget: "list"
+            fields:
+              - {label: "项目名称", name: "title", widget: "string"}
+              - {label: "类型", name: "kind", widget: "select", options: [摄影, 视频]}
+              - {label: "分类", name: "category", widget: "string", hint: "摄影填写：人像 / 人文 / 风景；视频填写：宣传片 / 微电影 / 信息流广告 / 旅拍短片 / 短视频客户案例"}
+              - {label: "封面图片", name: "cover", widget: "image"}
+              - {label: "视频链接", name: "videoUrl", widget: "string", required: false, hint: "可填写 Vimeo、YouTube 或 B 站链接"}
+              - {label: "地点与年份", name: "meta", widget: "string", required: false}
